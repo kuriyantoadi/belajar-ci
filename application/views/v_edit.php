@@ -12,7 +12,7 @@
       <tr>
         <td>Judul</td>
         <td>
-          <input type="hidden" name=id_buku"" value="<?php echo $row->id_buku; ?>">
+          <input type="hidden" name="id_buku" value="<?php echo $row->id_buku; ?>">
           <input type="text" name="judul" value="<?php echo $row->judul; ?>">
         </td>
       </tr>

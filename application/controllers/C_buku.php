@@ -60,5 +60,12 @@ class C_buku extends CI_Controller {
 		$this->M_buku->edit_data($data_kode,$data_buku);
 		redirect('C_buku');
 	}
+
+	//hapus buku
+	function hapus($id_buku){
+		$data_kode = array('id_buku'=>$id_buku);
+		$this->M_buku->hapus_data($data_kode);
+		redirect('C_buku');
+	}
 }
 ?>

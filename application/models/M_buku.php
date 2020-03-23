@@ -21,11 +21,15 @@ class M_buku extends CI_Model{
   }
 
   function edit_data($data_kode,$data_buku){
-  #  $this->db->where($data_kode);
-    $this->db->update('tb_buku',$data_kode,$data_buku);
+    $this->db->where($data_kode);
+    $this->db->update('tb_buku',$data_buku);
   }
 
-
+  //hapus buku
+  function hapus_data($data_kode){
+    $this->db->where($data_kode);
+    $this->db->delete('tb_buku');
+  }
 }
 
 

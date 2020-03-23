@@ -28,6 +28,7 @@
         <td><?php echo $row->pengarang; ?></td>
         <td><?php echo $row->tahun_terbit ?></td>
         <td><?php echo anchor('C_buku/e/'.$row->id_buku,'Edit');  ?></td>
+        <td><?php echo anchor('C_buku/hapus/'.$row->id_buku,'Hapus'); ?></td>
       </tr>
     <?php echo form_close(); } ?>
     </table>
